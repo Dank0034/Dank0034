@@ -1,0 +1,61 @@
+
+body{
+    font-family: 'comic Sans Ms', cursive, sans-serif;
+    background:linear-gradient(135deg, #ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: auto;
+}
+#header{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 80px;
+}
+#header h1{
+    color: #ff4081;
+    font-size: 3em;
+    margin: 0;
+}
+#message{
+    margin: 40px auto;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#gallery{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.photo img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5;
+}
+#footer{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 150px;
+}
+.confetti{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: fall 3s linear forwards;
+}
+@keyframes fall {
+    to{
+        transform: translateY(100Yh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
